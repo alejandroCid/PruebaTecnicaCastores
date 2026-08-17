@@ -31,7 +31,7 @@ const router = createBrowserRouter([
                 element: <ProtectedRoute allowedRoles={Permisos.salida}><Salida/></ProtectedRoute>
             },{
                 path: "/historial",
-                element: <ProtectedRoute allowedRoles={Permisos.historial}><Historial/></ProtectedRoute>
+                element: <ProtectedRoute allowedRoles={Permisos.historico}><Historial/></ProtectedRoute>
             },{
                 path: "/login",
                 element: <Login/>

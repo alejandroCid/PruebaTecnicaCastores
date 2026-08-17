@@ -39,7 +39,6 @@ create table historial_movimientos (
 Insert into roles (idRol, rol) values (1, "Administrador");
 Insert into roles (idRol, rol) values (2, "Almacenista");
 
-select * from usuarios;
 insert into usuarios (nombre, correo, contrasena, idRol, estatus) values ( "Admin", "admin@gmail.com", "admin123", 1, 1);
 insert into usuarios (nombre, correo, contrasena, idRol, estatus) values ( "Juan", "juanelan@gmail.com", "juan123", 1, 0);
 insert into usuarios (nombre, correo, contrasena, idRol, estatus) values ( "Luisa", "luisalpe@gmail.com", "luisa2001", 2, 1);

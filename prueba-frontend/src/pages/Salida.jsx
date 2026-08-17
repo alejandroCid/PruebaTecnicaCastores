@@ -88,12 +88,12 @@ const Salida = () => {
     if (!confirmacion.isConfirmed) return;
 
     try {
-      const idUsuario = 1;
+      const usuario = JSON.parse(localStorage.getItem('usuario'));
 
       await InventarioService.salidaInventario(
         productoSeleccionado,
         cantidadSalida,
-        idUsuario
+        usuario.idUsuario
       );
 
       setModal(false);

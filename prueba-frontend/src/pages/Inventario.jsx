@@ -108,12 +108,12 @@ const Inventario = () => {
     }
 
     try {
-      const idUsuario = 1;
+      const usuario = JSON.parse(localStorage.getItem('usuario'));
 
       await InventarioService.entradaInventario(
         productoSeleccionado,
         Number(entrada),
-        idUsuario
+        usuario.idUsuario
       );
 
       const cantidadAgregada = entrada;
